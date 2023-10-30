@@ -1,1 +1,1 @@
-## SalesGPT implementation using Haystack
+## Sales Agent using Haystack
