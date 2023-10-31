@@ -105,30 +105,6 @@ async def chat_with_sales_agent(req: MessageList):
     return res
 
 
-class SalesRequest(BaseModel):
-    """
-    Represents a sales request.
-
-    Attributes:
-    - salesperson_name: The name of the salesperson.
-    - salesperson_role: The role of the salesperson.
-    - company_name: The name of the company.
-    - company_business: The business of the company.
-    - company_values: The values of the company.
-    - conversation_purpose: The purpose of the conversation.
-    - conversation_type: The type of the conversation.
-    - custom_prompt: The custom prompt to be used.
-    """
-    salesperson_name: str
-    salesperson_role: str
-    company_name: str
-    company_business: str
-    company_values: str
-    conversation_purpose: str
-    conversation_type: str
-    custom_prompt: str
-    use_tools: str
-
 
 if __name__ == "__main__":
     uvicorn.run("run_api:app", host="127.0.0.1", port=8000, reload=True)
